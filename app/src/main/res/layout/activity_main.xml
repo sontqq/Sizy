@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,122 +11,20 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txt_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_weight="1"
-            android:shadowColor="#dbe2ef"
-            android:shadowDx="8"
-            android:shadowDy="8"
-            android:shadowRadius="15"
-            android:text="Sizy"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="#f6416c"
-            android:textSize="45sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt_curdir"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:text="Current Directory: "
-            android:textAlignment="center" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/internal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/roundbutton"
-
-                android:text="Internal Memory"
-                android:textAlignment="center"
-                android:textColor="@color/feher" />
-
-            <Button
-                android:id="@+id/external"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/roundbutton"
-
-                android:text="External SD Card"
-                android:textAlignment="center"
-                android:textColor="@color/feher" />
-
-        </LinearLayout>
-
         <lecho.lib.hellocharts.view.PieChartView
             android:id="@+id/chart"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="100" />
+            android:layout_weight="1" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <Button
-                android:textColor="@color/feher"
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/roundbutton"
-
-                android:layout_margin="5dp"
-                android:text="Back"
-                android:textAlignment="center" />
-
-            <Button
-                android:id="@+id/delete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/roundbutton"
-
-                android:text="Delete Directory"
-                android:textAlignment="center"
-                android:textColor="@color/feher" />
-
-
-        </LinearLayout>
-
-        <com.google.android.gms.ads.doubleclick.PublisherAdView
-            android:id="@+id/publisherad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal|center|bottom"
-            android:layout_weight="1"
-            android:visibility="visible"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-4051604993335718/8331389509">
-
-        </com.google.android.gms.ads.doubleclick.PublisherAdView>
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:text="Back"
+            android:textAlignment="center" />
     </LinearLayout>
 
 </LinearLayout>
