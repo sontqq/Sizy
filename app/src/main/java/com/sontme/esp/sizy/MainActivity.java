@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             chart.setOnValueTouchListener(new PieChartOnValueSelectListener() {
                 @Override
                 public void onValueSelected(int arcIndex, SliceValue value) {
+
                     hashmap.clear();
                     sorted_hashmap.clear();
 
