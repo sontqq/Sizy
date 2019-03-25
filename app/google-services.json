@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1061492169815",
+    "firebase_url": "https://sizy-b0a42.firebaseio.com",
+    "project_id": "sizy-b0a42",
+    "storage_bucket": "sizy-b0a42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061492169815:android:fd0f02d4c882c4b4",
+        "android_client_info": {
+          "package_name": "com.sontme.esp.sizy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061492169815-s6q29v63ensijuat6258b2qsbvm2lauq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-0C5tuR3PsxO-W1DMekdTDXY4rMckCrs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
