@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         internal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                File f = new File(String.valueOf(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)));
+                File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
                 drawChart(f);
             }
         });
@@ -197,20 +197,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             int ossz = 0;
-
+            int fileColorCounter = 255;
             for (Map.Entry<Integer, String> entry : sorted_hashmap.entrySet()) {
                 ossz++;
-                Log.d("VALUE_", "ossz darab: " + ossz);
             }
-            int fileColorCounter = 255;
-            Log.d("VALUE_", "filecolor: " + fileColorCounter);
             for (Map.Entry<Integer, String> entry : sorted_hashmap.entrySet()) {
-                Log.d("VALUE_percent_", String.valueOf(100 / ossz));
-                Log.d("VALUE_", "filecolor: " + fileColorCounter);
-
                 int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
                 int fileColorA = Color.argb(fileColorCounter, 0, 0, 255);
-                Log.d("COLOR_", String.valueOf(fileColorA));
 
                 SliceValue s = new SliceValue();
                 if (entry.getValue().contains("(F) ")) {
@@ -225,6 +218,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 s.setValue(entry.getKey());
                 s.setLabel(entry.getValue() + " " + String.valueOf(entry.getKey() / 1024 / 1024) + " mb");
+                Log.d("CHART_", String.valueOf(entry.getKey()) + "_" + entry.getValue());
                 pieData.add(s);
 
             }
