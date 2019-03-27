@@ -1,2 +1,7 @@
 # Sizy
-Visualize your phone's free or used space.
+Visualize your Android phone's free or used space.
+
+
+
+
+![screenshot](https://i.imgur.com/nu6rcT2.jpg)
